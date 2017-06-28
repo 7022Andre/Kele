@@ -24,7 +24,7 @@ module Roadmap
 
 	def update_submission(id, checkpoint_id, assignment_branch, assignment_commit_link, comment)
 		enrollment_id = get_me["current_enrollment"]["id"]
-		response = self.class.put("/checkpoint_submissions/:#{id}",
+		response = self.class.put("/checkpoint_submissions/#{id}",
 			headers: { "authorization": @auth_token	},
 			body: {
 				"enrollment_id": enrollment_id,
