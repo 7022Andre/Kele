@@ -3,7 +3,7 @@ require 'json'
 require './lib/roadmap'
 require './lib/messages'
 
-class Kele
+class AccessAPI
 	include HTTParty
 	include Roadmap
 	include Messages
